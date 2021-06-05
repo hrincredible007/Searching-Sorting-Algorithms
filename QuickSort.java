@@ -27,7 +27,6 @@ public class QuickSort {
             QuickSorting(0, l, arr, j);
             QuickSorting(0, j+1, arr, h);
         }
-
     }
     private int Partition(int n, int l, int[] arr, int h){
         int pivot = arr[l];
