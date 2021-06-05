@@ -23,7 +23,6 @@ public class QuickSort {
     private void QuickSorting(int n, int l, int[] arr, int h) {
         if(l<h){
             int j = Partition(n,l,arr,h);
-            System.out.println(j);
             QuickSorting(0, l, arr, j);
             QuickSorting(0, j+1, arr, h);
         }
@@ -33,7 +32,6 @@ public class QuickSort {
         int i = l;
         int j = h;
         while(i<j){
-            System.out.println(i+"  "+j);
             while(arr[i]<=pivot){
                 i++;
             }
@@ -41,7 +39,6 @@ public class QuickSort {
                 j--;
             }
             if(i<j){
-                System.out.print(true+"   ");
                 swap(arr, i ,j);
             }
         }
